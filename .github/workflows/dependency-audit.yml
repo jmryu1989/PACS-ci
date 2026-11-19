@@ -12,8 +12,6 @@ concurrency:
   cancel-in-progress: false
 'on':
   # Sunday 21:00 UTC = Monday 06:00 KST, away from the nightly validation at 18:00 UTC.
-  schedule:
-  - cron: '0 21 * * 0'
   workflow_dispatch: {}
 jobs:
   dependency-audit:
