@@ -2750,9 +2750,6 @@ jobs:
   # ready runs CI in full at that head, replacing the failed draft checks.
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
-  # D1797/D1808: hosted nightly of runtime + restore-product on main; 18:00 UTC = 03:00 KST.
-  schedule:
-  - cron: '0 18 * * *'
   workflow_dispatch:
     inputs:
       candidate_sha:
